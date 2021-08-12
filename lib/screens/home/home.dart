@@ -64,9 +64,11 @@ class _HomeState extends State<Home> {
                     color: pinkTheme,
                   ),
             onPressed: () {
-              setState(() {
-                _products.isFavorite = !_products.isFavorite;
-              });
+              setState(
+                () {
+                  _products.isFavorite = !_products.isFavorite;
+                },
+              );
             },
           ),
           title: Column(
